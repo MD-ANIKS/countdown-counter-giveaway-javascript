@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background: rgb(233, 253, 253);
+}
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85%;
+  margin: 80px auto;
+}
+.gift-image {
+  width: 45%;
+}
+.gift-image img {
+  width: 100%;
+}
+.gift-info {
+  width: 45%;
+}
+.gift-info h1 {
+  font-size: 25px;
+  color: rgb(25 89 144);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 5px 0px;
+}
+h4.giveaway {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.gift-info p {
+  font-size: 13px;
+  padding: 20px 0px;
+  line-height: 21px;
+  width: 445px;
+  color: rgb(138, 156, 179);
+}
+.deadline {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.deadline div {
+  margin-right: 10px;
+  text-align: center;
+  background: #16293e;
+  color: white;
+  padding: 6px 19px;
+}
+
+.deadline h4 {
+  font-size: 30px;
+}
+.expired {
+  text-transform: capitalize;
+  font-weight: bolder;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.deadline span {
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* ========================================
+  responsive web to mobile friendly
+==========================================*/
+@media screen and (max-width: 768px) {
+  .flexbox {
+    flex-direction: column;
+    margin: 50px auto;
+  }
+  .gift-image {
+    width: 100%;
+  }
+  .gift-info {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .gift-info h1 {
+    font-size: 19px;
+    padding: 10px 0px;
+  }
+  h4.giveaway {
+    font-size: 13.5px;
+  }
+  .gift-info p {
+    width: 100%;
+  }
+}
